@@ -98,3 +98,6 @@ Ulvenwald Captive;Ulvenwald Abomination
 Vildin-Pack Outcast;Dronepack Kindred
 Ulrich of the Krallenhorde;Ulrich, Uncontested Alpha
 Voldaren Pariah;Abolisher of Bloodlines
+Hanweir Battlements;Hanweir, the Writhing Township
+Docent of Perfection;Final Iteration
+Curious Homunculus;Voracious Reader
