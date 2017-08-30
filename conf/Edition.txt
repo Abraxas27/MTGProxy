@@ -163,6 +163,7 @@
 20160610	EMA	Eternal Masters
 20160622	EMN	Eldritch Moon
 20160819	V16	From the Vault: Lore
+20160826    CN2 Conspiracy: Take the Crown
 20160902	DDR	Duel Decks: Nissa vs. Ob Nixilis
 20160930	KLD	Kaladesh
 20160930	MPS	Kaladesh Inventions
@@ -170,16 +171,28 @@
 20161125	PCA	Planechase Anthology
 20170120	AER	Aether Revolt
 20170317	MM3	Modern Masters 2017 Edition
+20170331	DDS Duel Decks: Mind vs. Might
 20170428	AKH	Amonkhet
+20170428	AKH	Amonkhet Invocations
+20170428	N/A	Deck Builder's Toolkit (Amonkhet Edition)
 20170519	DDS	Duel Decks: Mind vs. Might
 20170609	CMA	Commander Anthology
 20170614	HOU	Hour of Devastation
-20170616	unrevealed	Archenemy: Nicol Bolas
-20171000	unrevealed	"Ham"
-20180200	unrevealed	"Eggs"
-20180400	unrevealed	"Soup"
-20180600	unrevealed	"Salad"
-20181000	unrevealed	"Spaghetti"
-20190200	unrevealed	"Meatballs"
-20190400	unrevealed	"Milk"
-20190600	unrevealed	"Cookies"
+20170616	E01	Archenemy: Nicol Bolas
+20170825	C17	Commander 2017
+20170929	XLN Ixalan
+20171100	IMA Iconic Masters
+20171110	unrevealed Duel Decks: Merfolk vs. Goblins
+20171124	V17 From the Vault: Transform
+20171124	E02 Explorers of Ixalan
+20171208    UST Unstable
+20180119	RIX Rivals of Ixalan
+20180316	M25 Masters 25
+20180427	DOM	Dominaria
+20180720    M19 Core 2019
+20180900	unrevealed	"Spaghetti"
+20190100	unrevealed	"Meatballs"
+20190900	unrevealed	"Milk"
+20190900	unrevealed	"Archery"
+20200100	unrevealed	"Baseball"
+99999999	XXX	Custom
