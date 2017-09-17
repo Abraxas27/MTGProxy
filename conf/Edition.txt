@@ -173,9 +173,8 @@
 20170317	MM3	Modern Masters 2017 Edition
 20170331	DDS Duel Decks: Mind vs. Might
 20170428	AKH	Amonkhet
-20170428	AKH	Amonkhet Invocations
+20170428	MPS	Amonkhet Invocations
 20170428	N/A	Deck Builder's Toolkit (Amonkhet Edition)
-20170519	DDS	Duel Decks: Mind vs. Might
 20170609	CMA	Commander Anthology
 20170614	HOU	Hour of Devastation
 20170616	E01	Archenemy: Nicol Bolas
