@@ -4,3 +4,4 @@ scans/*
 conf/global.ini
 output/*
 input/*
+/logs/activity.log

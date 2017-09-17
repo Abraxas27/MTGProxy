@@ -40,7 +40,7 @@ def get_boolean_or_default(section, option, default_value):
 
 def csv_to_dict(file):
     with open(file, 'r', encoding='utf8') as fd:
-        return {rows[0]: rows[1] for rows in csv.reader(fd, delimiter=';')}
+        return {rows[0].lower(): rows[1].lower() for rows in csv.reader(fd, delimiter=';')}
 
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 CONF_DIR = os.path.realpath(os.path.join(ROOT_DIR, 'conf'))

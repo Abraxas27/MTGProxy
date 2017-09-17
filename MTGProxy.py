@@ -58,7 +58,7 @@ def is_double_faced_card(cardname):
 
 
 def create_proxy_offline(quantity, cardname, cardset=''):
-    cardname_splitted = cardname.split('//')[0].rstrip()
+    cardname_splitted = cardname.split('//')[0].rstrip().lower()
     if is_double_faced_card(cardname_splitted):
         if not create_proxy_offline(quantity, param.CARDS_DOUBLE_FACED[cardname_splitted], cardset):
             log.error("'{}' not found in scans directory ".format(cardname_splitted))
@@ -137,13 +137,17 @@ def process_input_file(input_file):
 
 
 def delete_older_work():
-    if os.path.isdir(param.OUTPUT_PROXY_DIR):
-        for filename in os.listdir(param.OUTPUT_PROXY_DIR):
-            os.unlink(os.path.join(param.OUTPUT_PROXY_DIR, filename))
-    else:
-        os.makedirs(param.OUTPUT_PROXY_DIR)
+    os.makedirs(param.OUTPUT_DIR, exist_ok=True)
+    for root, dirs, files in os.walk(param.OUTPUT_DIR, topdown=False):
+        for name in files:
+            os.remove(os.path.join(root, name))
+        for name in dirs:
+            os.rmdir(os.path.join(root, name))
+    os.makedirs(param.OUTPUT_PROXY_DIR)
     log.debug(os.path.join(param.OUTPUT_DIR, param.OUTPUT_FILE_NAME))
-    shutil.copy(os.path.join(param.CONF_DIR, "Proxy.sla"), os.path.join(param.OUTPUT_DIR, param.OUTPUT_FILE_NAME))
+    if param.OUTPUT_FILE_EXTENSION == '.sla':
+        sla_filename = os.path.join(param.CONF_DIR, "Proxy.sla")
+        shutil.copy(sla_filename, os.path.join(param.OUTPUT_DIR, param.OUTPUT_FILE_NAME))
     open(param.NOT_FOUND_FILE, 'w').close()
 
 if __name__ == '__main__':
