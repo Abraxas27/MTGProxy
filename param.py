@@ -42,6 +42,7 @@ def csv_to_dict(file):
     with open(file, 'r', encoding='utf8') as fd:
         return {rows[0].lower(): rows[1].lower() for rows in csv.reader(fd, delimiter=';')}
 
+
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 CONF_DIR = os.path.realpath(os.path.join(ROOT_DIR, 'conf'))
 
@@ -53,7 +54,7 @@ EDITION_REGEX = '\d{8}\s*(\w*)\s'
 LOG_DIR = os.path.realpath(os.path.join(ROOT_DIR, 'logs'))
 ensure_directory_exists(LOG_DIR)
 
-OUTPUT_DIR = get_config_or_default('output', 'output_directory', os.path.join(ROOT_DIR, 'output'))
+OUTPUT_DIR = os.path.join(ROOT_DIR, get_config_or_default('output', 'output_directory', 'output'))
 OUTPUT_PROXY_DIR = os.path.join(OUTPUT_DIR, 'Proxy')
 if not os.path.isabs(OUTPUT_DIR):
     OUTPUT_DIR = os.path.realpath(os.path.join(ROOT_DIR, OUTPUT_DIR))
