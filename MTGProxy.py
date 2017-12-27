@@ -54,7 +54,7 @@ def find_card_offline(name, cardset=None):
 
 
 def is_double_faced_card(cardname):
-    return True if cardname in param.CARDS_DOUBLE_FACED.keys() else False
+    return True if cardname.lower() in param.CARDS_DOUBLE_FACED.keys() else False
 
 
 def create_proxy_offline(quantity, cardname, cardset=''):
@@ -149,6 +149,7 @@ def delete_older_work():
         sla_filename = os.path.join(param.CONF_DIR, "Proxy.sla")
         shutil.copy(sla_filename, os.path.join(param.OUTPUT_DIR, param.OUTPUT_FILE_NAME))
     open(param.NOT_FOUND_FILE, 'w').close()
+
 
 if __name__ == '__main__':
     delete_older_work()
