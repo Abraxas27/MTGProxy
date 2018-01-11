@@ -1,7 +1,4 @@
 .idea
-scans/*
-!scans/put_scans_here
-conf/global.ini
-output/*
-input/*
-/logs/activity.log
+MTGProxy/conf/global.ini
+MTGProxy/logs/
+tests/.cache/

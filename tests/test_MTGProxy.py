@@ -1,4 +1,4 @@
-import MTGProxy
+import MTGProxy.MTGProxy as MTGProxy
 import os
 import pytest
 # import param
