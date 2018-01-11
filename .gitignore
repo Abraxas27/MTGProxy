@@ -1,4 +1,5 @@
 .idea
 MTGProxy/conf/global.ini
 MTGProxy/logs/
+MTGProxy/output/
 tests/.cache/
