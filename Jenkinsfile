@@ -1,3 +1,4 @@
+#!groovy​
 pipeline {
     agent none
     stages {
@@ -6,7 +7,10 @@ pipeline {
                 dockerfile true
             }
             steps {
-                sh 'python -m pytest --verbose --junit-xml test-reports/results.xml tests/test_MTGProxy.py'
+                withEnv(["PYTHONPATH=$WORKSPACE/MTGProxy"]) {
+                    sh 'env'
+                    sh 'python -m pytest --verbose --junit-xml test-reports/results.xml tests/test_MTGProxy.py'
+                }
             }
             post {
                 always {
