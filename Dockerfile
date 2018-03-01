@@ -6,6 +6,7 @@ RUN pip install docker-py \
   prometheus_client \
   pycobertura \
   pylint \
+  pyflakes \
   pytest \
   pytest-cov \
   requests \
