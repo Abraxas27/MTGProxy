@@ -7,6 +7,7 @@ RUN pip install docker-py \
   pycobertura \
   pylint \
   pyflakes \
+  pycodestyle \
   pytest \
   pytest-cov \
   requests \
